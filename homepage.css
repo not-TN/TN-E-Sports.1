@@ -1,0 +1,220 @@
+header {
+
+      padding-right: 7px;
+        padding-left: 5px;
+        
+        margin: 0;
+        position : sticky;
+       
+        top : 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height : 100px;
+
+
+}
+header h1 {
+    
+    color : white;
+
+}
+
+header a {
+    gap : 35px;
+    color: white;
+    text-decoration: none;
+
+
+}
+header p{
+
+        display: flex;
+        gap: 20px;
+        
+    }
+
+
+ body{
+        background-color: black;
+        margin : 0;
+        padding : 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding-bottom:10px ;
+    color : white;
+
+}
+
+footer hr {
+    border: none;
+    background-color: crimson;
+    height: 2px;
+    width: 90%;
+} 
+
+
+ .Products {
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px ;
+    width: 90%;
+    margin: 30px auto;
+
+
+
+ }
+
+ .product-card {
+
+    box-sizing: border-box;
+    width: auto;
+
+    padding: 20px;
+    border: 2px solid crimson;
+    border-radius: 6px;
+color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+ }
+    .product-card img {
+        object-fit: contain;
+        width: 100%;
+        height: 200px;
+        display: block;
+        margin:  0 auto;
+        border: none;
+    }
+    .product-card button{
+      
+        background-color: darkred;
+    color: white;
+    padding : 12px 25px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 15%;
+    font-size:20px;
+    }
+
+    #hero {
+        color:white;
+        background-image: url(Images/bg.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+    background-position: center;
+    
+
+    
+    color: white;
+   padding : 70px 20px;
+
+
+    }
+    #text {
+
+        color: white;
+
+        text-align: center;
+    }
+    span{
+
+        color:crimson;
+
+    }
+button{
+    background-color: darkred;
+    color: white;
+    padding : 12px 25px;
+    border: none;
+    border-radius: 6px;
+    
+    height: 25%;
+    font-size:20px;
+}
+
+#hero h4 {
+
+    color: crimson;
+
+}
+
+@media (max-width : 768px) {
+     .Products{
+
+        grid-template-columns:1fr;
+
+        width: 90%;
+        gap : 20px;
+    }
+    .product-card{
+
+        width: 100%;
+          box-sizing: border-box;
+        padding: 15px;
+} 
+.product-card img{
+
+height: 180px;
+object-fit: contain;
+
+}
+
+
+header {
+
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding : 12px;
+    box-sizing: border-box;
+
+}
+
+header h1 {
+    font-size : 25px;
+
+    text-align: center;
+
+
+}
+
+header p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#hero{
+
+       text-align: center;
+    gap : 15px;
+    background-position: center;
+    }
+    
+    #footer {
+        text-align: center;
+        padding : 10px;
+
+    }
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
